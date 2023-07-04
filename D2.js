@@ -80,15 +80,18 @@ const number6 = 5;
 const number7 = 100;
 const number8 = 40;
 const numbers = [number6, number7, number8];
-numbers.sort((a, b) => b - a);
-console.log(numbers);
+if (number6 > number7) console.log(numbers);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 const valore = "ciao";
-console.log(typeof valore);
+if (typeof valore === "string") {
+  console.log("non é un numero");
+} else {
+  console.log("é un numero");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
