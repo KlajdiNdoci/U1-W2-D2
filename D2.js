@@ -51,11 +51,11 @@ if (number4 === 8 || number5 === 8 || number4 - number5 === 8 || number4 + numbe
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-const totalShoppingCart = 50;
-if (totalShoppingCart <= 50) {
-  console.log("Prezzo =", totalShoppingCart);
-} else if (totalShoppingCart > 50) {
+const totalShoppingCart = 70;
+if (totalShoppingCart < 50) {
   console.log("Prezzo =", totalShoppingCart + 10);
+} else if (totalShoppingCart >= 50) {
+  console.log("Prezzo =", totalShoppingCart);
 }
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -64,10 +64,10 @@ if (totalShoppingCart <= 50) {
 
 const totalDiscount = totalShoppingCart * 0.2;
 const totalDiscountedCart = totalShoppingCart - totalDiscount;
-if (totalShoppingCart - totalDiscount <= 50) {
-  console.log("Prezzo =", totalDiscountedCart);
-} else if (totalShoppingCart - totalDiscount > 50) {
+if (totalDiscountedCart < 50) {
   console.log("Prezzo =", totalDiscountedCart + 10);
+} else if (totalDiscountedCart >= 50) {
+  console.log("Prezzo =", totalDiscountedCart);
 }
 
 /* ESERCIZIO 7
