@@ -79,8 +79,27 @@ if (totalDiscountedCart < 50) {
 const number6 = 5;
 const number7 = 100;
 const number8 = 40;
-const numbers = [number6, number7, number8];
-if (number6 > number7) console.log(numbers);
+if (number6 >= number7) {
+  if (number8 >= number6) {
+    console.log(number8, number6, number7);
+  } else {
+    if (number8 >= number7) {
+      console.log(number6, number8, number7);
+    } else {
+      console.log(number6, number7, number8);
+    }
+  }
+} else {
+  if (number8 >= number7) {
+    console.log(number8, number7, number6);
+  } else {
+    if (number8 >= number6) {
+      console.log(number7, number8, number6);
+    } else {
+      console.log(number7, number6, number8);
+    }
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
