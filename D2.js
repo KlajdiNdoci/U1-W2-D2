@@ -161,6 +161,5 @@ console.log(numbers1To10);
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-numbers1To10.pop(9);
-numbers1To10.push(100);
+numbers1To10.splice(9, 1, 100);
 console.log(numbers1To10);
