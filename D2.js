@@ -39,7 +39,7 @@ if (50 % 5 === 0) {
 const number4 = 10;
 const number5 = 2;
 
-if (number4 === 8 || number5 === 8 || number4 - number5 === 8) {
+if (number4 === 8 || number5 === 8 || number4 - number5 === 8 || number4 + number5 === 8) {
   console.log("il numero é 8");
 } else {
   console.log("il numero non é 8");
